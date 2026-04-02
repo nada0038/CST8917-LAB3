@@ -1,4 +1,9 @@
-# FleetBook - Serverless Vehicle Booking System
+# Lab 3: FleetBook — Vehicle Booking with Service Bus, Logic Apps & Functions
+
+## Akash Nadackanal Vinod (041156265)
+
+## Demo Video
+- https://youtu.be/4JLDoM3vxic
 
 ## Overview
 FleetBook is a serverless Azure application that handles vehicle bookings. It uses a small frontend to send requests to an Azure Service Bus queue, which triggers a Logic App. The Logic App passes the data over to a Python Azure Function to calculate availability and pricing, and then sends the final result back to the Service Bus topic for the frontend to pick up.
@@ -36,5 +41,4 @@ FleetBook is a serverless Azure application that handles vehicle bookings. It us
    - Drop in your Service Bus namespace and the Primary Key (from the `RootManageSharedAccessKey` policy).
    - Try booking a car and watch the dashboard update in real-time!
 
-## Demo Video
-- [YouTube Demo Video Link here]
+
