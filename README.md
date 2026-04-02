@@ -13,13 +13,13 @@ FleetBook is a serverless Azure application that handles vehicle bookings. It us
 ## Setup Instructions
 
 1. **Azure Infrastructure**:
-   - Create a Resource Group (like `rg-serverless-lab3`).
+   - Create a Resource Group `rg-serverless-lab3`.
    - Provision an Azure Service Bus (Standard tier is required for topics).
    - Create a queue named `booking-queue`.
    - Create a topic named `booking-results` with two subscriptions: `confirmed-sub` and `rejected-sub`. Set up SQL filters on these subscriptions so they only catch messages where `sys.label = 'confirmed'` or `sys.label = 'rejected'`.
 
 2. **Azure Function Deployment**:
-   - Create a Linux Consumption Function App running Python 3.11 or 3.12.
+   - Create a Linux Consumption Function App running Python 3.12.
    - Deploy the `function_app.py` code to it.
    - You can verify it's working by running the tests in `test-function.http` locally or against the live URL.
    
