@@ -41,4 +41,6 @@ FleetBook is a serverless Azure application that handles vehicle bookings. It us
    - Drop in your Service Bus namespace and the Primary Key (from the `RootManageSharedAccessKey` policy).
    - Try booking a car and watch the dashboard update in real-time!
 
+## AI Disclosure Statement
+Used ChatGPT to draft and organize the summary/analysis and to help identify relevant official documentation sources for Azure Durable Functions. I reviewed and edited the text for accuracy and ensured all claims are supported by citations.
 
